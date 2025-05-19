@@ -8,34 +8,31 @@
     <title>My Projects</title>
 
     <!-- Add Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Bootstrap Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav>
         <div class="container">
-            <a class="navbar-brand" href="index.html">Jason Holt</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+            <div id="navbarNav">
+                <ul class="navbar">
+                    <li>
+                        <div class="navbar-name">Jason Holt</div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                    <li>
+                        <a class="navbar-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Work Experience</a>
+                    <li>
+                        <a class="navbar-link" href="projects.html">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <li>
+                        <a class="navbar-link-active" href="workexperience.html">Work Experience</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
+                    <li>
+                        <a class="navbar-link" href="contact.html">About Me</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="resume.html">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -43,30 +40,24 @@
     </nav>
 
     <!-- Content Area with Projects List -->
-    <div class="container mt-4">
-        <h2>Work Experience</h2>
+    <div class="container">
+        <h1>Work Experience</h1>
         <div class="list-group">
             <!-- Project 1 -->
-            <div class="list-group-item">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/IT_Internship.png" alt="Project Image 1" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-8">
-                        <h5 class="mb-1">Ashley Ridge High School IT technician Intern</h5>
-                        <p class="mb-1">During this internship I diagonsed and fixed other student laptops.</p>
-                        <small>Dates: 9/1/2020 - 6/20/2021</small>
-                    </div>
-                </div>
+            <div class="list-group-item" id="portfolio">
+                <ul>
+                    <li class="list-group-image"><img src="images/IT_Internship.png" alt="Cantey" class= "list-group-image" width="350px" height="140px"></li>
+                    <li class="list-group-item">
+                        <div>
+                            <h1>Ashley Ridge High School IT technician Intern</h1>
+                            <p style="font-size:20px">During this internship I diagonsed and fixed other student laptops.</p>
+                            <p style="font-size:15px;">Dates: 9/1/2020 - 6/20/2021</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-
-            
-
-            <!-- Add more projects as needed -->
-
         </div>
     </div>
 
 </body>
-
 </html>

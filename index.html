@@ -5,64 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jason Holt's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- Add Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-    <!-- Bootstrap Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav>
         <div class="container">
-            <a class="navbar-brand" href="#">Jason Holt</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+            <div id="navbarNav">
+                <ul class="navbar">
+                    <li>
+                        <div class="navbar-name">Jason Holt</div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                    <li>
+                        <a class="navbar-link-active" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="workexperience.html">Work Experience</a>
+                    <li>
+                        <a class="navbar-link" href="projects.html">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <li>
+                        <a class="navbar-link" href="workexperience.html">Work Experience</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
+                    <li>
+                        <a class="navbar-link" href="contact.html">About Me</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="resume.html">Resume</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav><br>
 
-    <!-- Content Area with Bootstrap Card -->
-    <div class="container mt-4">
-        <!-- <img src="images/me.JPG" alt="This is totally an image of me and not of a lot of people" width="1000" height="500"> -->
-        <div class="card">
-            <div class="card-body">
-                <h1 class="card-title">Welcome to My Portfolio Website</h1>
-                <p class="card-text">I am a mechanical engineering student at the University of Central Florida with a
-                    passion for space, robotics, software, and mehcanical systems. This website is a working project that I constantly work on to improve.</p>
-            </div>
-        </div>
+
+
+<div class="slider-container">
+  <div class="slider">
+    <div class="slides">
+      <div id="slides__1" class="slide">
+        <span><a href="projects.html#portfolio"><img src="images/Portfolio.png" width="350px" height="350px"></a></span>
+        <a class="slide__prev" href="#slides__4" title="Next"></a>
+        <a class="slide__next" href="#slides__2" title="Next"></a>
+      </div>
+      <div id="slides__2" class="slide">
+        <span><a href="projects.html#pcbuild"><img src="images/PCBuild.jpg" width="350px" height="350px"></a></span>
+        <a class="slide__prev" href="#slides__1" title="Prev"></a>
+        <a class="slide__next" href="#slides__3" title="Next"></a>
+      </div>
+      <div id="slides__3" class="slide">
+        <span><a href="projects.html#gemini"><img src="images/GeminiProject.PNG" width="350px" height="350px"></a></span>
+        <a class="slide__prev" href="#slides__2" title="Prev"></a>
+        <a class="slide__next" href="#slides__4" title="Next"></a>
+      </div>
+      <div id="slides__4" class="slide">
+        <span><a href="projects.html#robohand"><img src="images/RoboHandFront.jpg" width="350px" height="350px"></a></span>
+        <a class="slide__prev" href="#slides__3" title="Prev"></a>
+        <a class="slide__next" href="#slides__1" title="Prev"></a>
+      </div>
     </div>
 
-    <div class ="container mt-4">
+    <div class="slider__nav">
+    <a class="slider__navlink" href="#slides__1"></a>
+    <a class="slider__navlink" href="#slides__2"></a>
+    <a class="slider__navlink" href="#slides__3"></a>
+    <a class="slider__navlink" href="#slides__4"></a>
+    </div>
+
+
+  </div>
+</div><br>
+
+
+
+
+
+    <div class ="container">
         <div class = "card">
-            <div class ="card-body">
-                <h3 class="card-title">Certifications</h3>
-                <p class ="card-text"><ul>
-                    <li><b><a href="https://www.solidworks.com/certifications/drawing-tools-cswpa-dt">Certified SOLIDWORKS Professional in Drawing Tools</a></b> - (2025 to Present)</li>
-                    <li><b><a href="https://www.solidworks.com/certifications/simulation-cswa-simulation">Certified SOLIDWORKS Associate in Simulation</a></b> - (2024 to Present)</li>
-                    <li><b><a href="https://www.solidworks.com/certifications/additive-manufacturing-cswa-additive-manufacturing">Certified SOLIDWORKS Associate in Additive Manufacturing</a></b> - (2024 to Present)</li>
-                    <li><b><a href="https://www.solidworks.com/certifications/solidworks-cad-design-professional">Certified SOLIDWORKS Professional in Mechanical Design</a></b> - (2024 to Present)</li>
-                    <li><b><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/98-367/">Microsoft Technology Associate: Security Fundamental Certification</a></b> - (2020 to Present)</li>
+            <div>
+                <h3>Certifications</h3>
+                <p><ul>
+                    <li><b><a class="link" href="https://www.solidworks.com/certifications/drawing-tools-cswpa-dt">Certified SOLIDWORKS Professional in Drawing Tools</a></b> - (2025 to Present)</li>
+                    <li><b><a class="link" href="https://www.solidworks.com/certifications/simulation-cswa-simulation">Certified SOLIDWORKS Associate in Simulation</a></b> - (2024 to Present)</li>
+                    <li><b><a class="link" href="https://www.solidworks.com/certifications/additive-manufacturing-cswa-additive-manufacturing">Certified SOLIDWORKS Associate in Additive Manufacturing</a></b> - (2024 to Present)</li>
+                    <li><b><a class="link" href="https://www.solidworks.com/certifications/solidworks-cad-design-professional">Certified SOLIDWORKS Professional in Mechanical Design</a></b> - (2024 to Present)</li>
+                    <li><b><a class="link" href="https://learn.microsoft.com/en-us/credentials/certifications/exams/98-367/">Microsoft Technology Associate: Security Fundamental Certification</a></b> - (2020 to Present)</li>
                     <li><b>South Carolina Essential Soft Skills Assessments Certification</b> - (2018 to Present)</li>
                 </ul></p>
             </div>
@@ -70,5 +96,4 @@
     </div>
 
 </body>
-
 </html>

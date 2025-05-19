@@ -7,35 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
 
-    <!-- Add Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Bootstrap Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav>
         <div class="container">
-            <a class="navbar-brand" href="index.html">Jason Holt</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+            <div id="navbarNav">
+                <ul class="navbar">
+                    <li>
+                        <div class="navbar-name">Jason Holt</div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                    <li>
+                        <a class="navbar-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="workexperience.html">Work Experience</a>
+                    <li>
+                        <a class="navbar-link-active" href="projects.html">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <li>
+                        <a class="navbar-link" href="workexperience.html">Work Experience</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
+                    <li>
+                        <a class="navbar-link" href="contact.html">About Me</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="resume.html">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -43,96 +39,89 @@
     </nav>
 
     <!-- Content Area with Projects List -->
-    <div class="container mt-4">
-        <h2>Projects</h2>
+    <div class="container">
+        <h1>Projects</h1>
         <div class="list-group">
             <!-- Project 1 -->
-            <div class="list-group-item">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/Portfolio.png" alt="Portfolio Code" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-8">
-                        <h5 class="mb-1">Portfolio Website</h5>
-                        <p class="mb-1">In this project, I created this website using standard HTML and CSS.</p>
-                        <br>
-                        <small>Dates: 2/5/2024 - Ongoing</small>
-                        <br><br>
-                        <small><a href="">Source Code</a></small>
-                    </div>
-                </div>
+            <div class="list-group-item" id="portfolio">
+                <ul>
+                    <li class="list-group-image"><img src="images/Portfolio.png" alt="Portfolio Code" class= "list-group-image" width="350px" height="350px"></li>
+                    <li class="list-group-item">
+                        <div>
+                            <h1>Portfolio Website</h1>
+                            <p style="font-size:20px">In this project, I created this website using standard HTML and CSS.</p>
+                            <p style="font-size:15px;">Dates: 2/5/2024 - Ongoing</p>
+                            <br>
+                            <small><a class="link" href="https://github.com/JasonOVHolt/JasonOVHolt.github.io">Source Code</a></small>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
             <!-- Project 2 -->
-            <div class="list-group-item">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/PCBuild.jpg" alt="Interior of Custom PC" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-8">
-                        <h5 class="mb-1">Assembled Custom Desktop</h5>
-                        <p class="mb-1">I researched desktop computer parts and put them together for a new computer to use daily for academic and recreational uses.</p>
-                        <br>
-                        <small>Dates: 7/10/2023 - 8/10/2023</small>
-                    </div>
-                </div>
+            <div class="list-group-item" id="pcbuild">
+                <ul>
+                    <li class="list-group-image"><img src="images/PCBuild.jpg" alt="Interior of Custom PC" class= "list-group-image" width="350px" height="350px"></li>
+                    <li class="list-group-item">
+                        <div>
+                            <h1>Assembled Custom Desktop</h1>
+                            <p style="font-size:20px">I researched desktop computer parts and put them together for a new computer to use daily for academic and recreational uses.</p>
+                            <p style="font-size:15px">Dates: 7/10/2023 - 8/10/2023</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-
-            <!-- Add more projects as needed -->
 
             <!-- Project 3 -->
-            <div class="list-group-item">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/GeminiProject.PNG" alt="Home Screen to project app" class="img-fluid rounded" height="100">
-                    </div>
-                    <div class="col-md-8">
-                        <h5 class="mb-1">Google Gemini Story App</h5>
-                        <p class="mb-1">My 2 friends and I created a windows app that would use google's gemini service to create stories in a specific language and difficulty to practice a language with a android build in development.</p>
-                        <br>
-                        <small>Dates: May 21 2024 - August 12 2024</small>
-                        <br><br>
-                        <small><a href="https://github.com/JasonOVHolt/Gemini-API-Project">Source Code</a></small>
-                    </div>
-                </div>
+            <div class="list-group-item" id="gemini">
+                <ul>
+                    <li class="list-group-image"><img src="images/GeminiProject.PNG" alt="Home Screen to project app" class= "list-group-image" width="350px" height="350px"></li>
+                    <li class="list-group-item">
+                        <div>
+                            <h1>Google Gemini Story App</h1>
+                            <p style="font-size:20px">My 2 friends and I created a windows app that would use google's gemini service to create stories in a specific language and difficulty to practice a language with a android build in development.</p>
+                            <p style="font-size:15px">Dates: May 21 2024 - August 12 2024</p>
+                            <br>
+                            <small><a class="link" href="https://github.com/JasonOVHolt/Gemini-API-Project">Source Code</a></small>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
-
+            
             <!-- Project 4 -->
-            <div class="list-group-item">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/WIP.png" alt="Work in Progress" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-8">
-                        <h5 class="mb-1">Unity Game</h5>
-                        <p class="mb-1">I am currently working on creating a versus multiplayer game using the Unity Game Engine which uses the C# language.</p>
-                        <br>
-                        <small>Dates: October 1 2024 - Present</small>
-                        <br><br>
-                        <small><a href="https://github.com/JasonOVHolt/UnityMultiplayerGame">Source Code</a></small>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="list-group-item">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/WIP.png" alt="Work in Progress" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-8">
-                        <h5 class="mb-1">Robotic Hand</h5>
-                        <p class="mb-1">Me and 3 others from UCF's ASME branch designed and fabricated a robotic hand with individual addressable fingers.</p>
-                        <br>
-                        <small>Dates: January 20 2025 - Present</small>
-                        <br><br>
-                        <small><a href="https://github.com/JasonOVHolt/RoboticHand">Source Code</a></small>
-                    </div>
-                </div>
+            <div class="list-group-item" id="game">
+                <ul>
+                    <li class="list-group-image"><img src="images/WIP.png" alt="Work in Progress" class= "list-group-image" width="350px" height="350px"></li>
+                    <li class="list-group-item">
+                        <div>
+                            <h1>Unity Game</h1>
+                            <p style="font-size:20px">I am currently working on creating a versus multiplayer game using the Unity Game Engine which uses the C# language.</p>
+                            <p style="font-size:15px">Dates: October 1 2024 - Present</p>
+                            <br>
+                            <small><a class="link" href="https://github.com/JasonOVHolt/UnityMultiplayerGame">Source Code</a></small>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
 
+            
+            <!-- Project 5 -->
+            <div class="list-group-item" id="robohand">
+                <ul>
+                    <li class="list-group-image"><img src="images/RoboHandFront.jpg" alt="" class= "list-group-image" width="350px" height="350px"></li>
+                    <li class="list-group-item">
+                        <div>
+                            <h1>Robotic Hand</h1>
+                            <p style="font-size:20px">Me and 3 others from UCF's ASME branch designed and fabricated a robotic hand with individual addressable fingers.</p>
+                            <p style="font-size:15px">Dates: January 20 2025 - April 21 2025</p>
+                            <br>
+                            <small><a class="link" href="https://github.com/JasonOVHolt/RoboticHand">Source Code</a></small>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
