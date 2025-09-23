@@ -270,12 +270,21 @@ ul li.list-group-portrait-item {
   min-height: 80px;
 }
 
+img.list-group-portrait-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
 
 
 img.list-group-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
+  height: auto;
 }
 
 
