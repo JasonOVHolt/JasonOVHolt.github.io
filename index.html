@@ -1,104 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jason Holt's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason Holt | Mechanical Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Jason Holt, mechanical engineer at Jerry Harvey Audio and UCF graduate: robotics, CAD and software projects.">
+  <meta name="theme-color" content="#0b0d12">
+  <meta property="og:title" content="Jason Holt | Mechanical Engineering Portfolio">
+  <meta property="og:description" content="Portfolio of Jason Holt, mechanical engineer at Jerry Harvey Audio and UCF graduate: robotics, CAD and software projects.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b8cff'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='white' text-anchor='middle'%3EJH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
 </head>
-
 <body>
-    <nav>
-        <div class="container">
-            <div id="navbarNav">
-                <ul class="navbar">
-                    <li>
-                        <div class="navbar-name">Jason Holt</div>
-                    </li>
-                    <li>
-                        <a class="navbar-link-active" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="workexperience.html">Work Experience</a>
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="contact.html">About Me</a>
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="resume.html">Resume</a>
-                    </li>
-                </ul>
-            </div>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html"><span class="brand-mark">JH</span>Jason Holt</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="workexperience.html">Experience</a></li>
+          <li><a href="contact.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Mechanical Engineer &middot; Jerry Harvey Audio</span>
+          <h1>Hi, I'm <span class="gradient-text">Jason Holt</span>.</h1>
+          <p class="lead">I'm a mechanical engineer at Jerry Harvey Audio, where I design CNC toolpaths for custom in-ear monitors and lead R&amp;D projects. I hold a B.S. in Mechanical Engineering from the University of Central Florida, and my work spans mechanical design, robotics, and software development.</p>
+          <ul class="tags">
+            <li class="tag">SOLIDWORKS</li>
+            <li class="tag">Robotics</li>
+            <li class="tag">CAD &amp; Simulation</li>
+            <li class="tag">Software / Game Dev</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="projects.html">View projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" href="downloads/JasonHoltResume2026.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg> Resume</a>
+          </div>
         </div>
-    </nav><br>
-
-
-
-<div class="slider-container">
-  <div class="slider">
-    <div class="slides">
-      <div id="slides__1" class="slide">
-        <span><a href="projects.html#portfolio"><img src="images/Portfolio.png" width="350px" height="350px"></a></span>
-        <a class="slide__prev" href="#slides__5" title="Next"></a>
-        <a class="slide__next" href="#slides__2" title="Next"></a>
-      </div>
-      <div id="slides__2" class="slide">
-        <span><a href="projects.html#pcbuild"><img src="images/PCBuild.jpg" width="350px" height="350px"></a></span>
-        <a class="slide__prev" href="#slides__1" title="Prev"></a>
-        <a class="slide__next" href="#slides__3" title="Next"></a>
-      </div>
-      <div id="slides__3" class="slide">
-        <span><a href="projects.html#gemini"><img src="images/GeminiProject.PNG" width="350px" height="350px"></a></span>
-        <a class="slide__prev" href="#slides__2" title="Prev"></a>
-        <a class="slide__next" href="#slides__4" title="Next"></a>
-      </div>
-      <div id="slides__4" class="slide">
-        <span><a href="projects.html#robohand"><img src="images/RoboHandFront.jpg" width="350px" height="350px"></a></span>
-        <a class="slide__prev" href="#slides__3" title="Prev"></a>
-        <a class="slide__next" href="#slides__5" title="Prev"></a>
-      </div>
-      <div id="slides__5" class="slide">
-        <span><a href="projects.html#hytaletool"><img src="images/HytaleBlockForge.jpg" width="350px" height="350px"></a></span>
-        <a class="slide__prev" href="#slides__4" title="Prev"></a>
-        <a class="slide__next" href="#slides__1" title="Prev"></a>
-      </div>
-    </div>
-
-    <div class="slider__nav">
-    <a class="slider__navlink" href="#slides__1"></a>
-    <a class="slider__navlink" href="#slides__2"></a>
-    <a class="slider__navlink" href="#slides__3"></a>
-    <a class="slider__navlink" href="#slides__4"></a>
-    </div>
-
-
-  </div>
-</div><br>
-
-
-
-
-
-    <div class ="container">
-        <div class = "card">
-            <div>
-                <h3>Certifications</h3>
-                <p><ul>
-                    <li><b><a class="link" href="https://www.solidworks.com/certifications/drawing-tools-cswpa-dt">Certified SOLIDWORKS Professional in Drawing Tools</a></b> - (2025 to Present)</li>
-                    <li><b><a class="link" href="https://www.solidworks.com/certifications/simulation-cswa-simulation">Certified SOLIDWORKS Associate in Simulation</a></b> - (2024 to Present)</li>
-                    <li><b><a class="link" href="https://www.solidworks.com/certifications/additive-manufacturing-cswa-additive-manufacturing">Certified SOLIDWORKS Associate in Additive Manufacturing</a></b> - (2024 to Present)</li>
-                    <li><b><a class="link" href="https://www.solidworks.com/certifications/solidworks-cad-design-professional">Certified SOLIDWORKS Professional in Mechanical Design</a></b> - (2024 to Present)</li>
-                    <li><b><a class="link" href="https://learn.microsoft.com/en-us/credentials/certifications/exams/98-367/">Microsoft Technology Associate: Security Fundamental Certification</a></b> - (2020 to Present)</li>
-                    <li><b>South Carolina Essential Soft Skills Assessments Certification</b> - (2018 to Present)</li>
-                </ul></p>
-            </div>
+        <div class="hero-photo">
+          <img src="images/me.JPG" alt="Portrait of Jason Holt">
         </div>
-    </div>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Selected work</span>
+            <h2 class="section-title">Featured projects</h2>
+          </div>
+          <a class="card-link" href="projects.html">All projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="grid">
+          <a class="card card-stretch reveal" href="projects.html#overlay">
+            <div class="card-media card-media-icon"><img src="images/ApplicationOverlay.png" alt="Window Overlay app icon" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-meta"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> October 2026</div>
+              <h3>Window Overlay</h3>
+              <p>Mirror any window into an always-on-top, click-through overlay with custom opacity and cropping.</p>
+              <div class="card-footer"><ul class="tags"><li class="tag">C#</li><li class="tag">Swift</li><li class="tag">Python</li><li class="tag">Desktop App</li></ul></div>
+            </div>
+          </a>
+          <a class="card card-stretch reveal" href="projects.html#hytaletool">
+            <div class="card-media"><img src="images/HytaleBlockForge.jpg" alt="Hytale Block Forge tool" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-meta"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> January 2026</div>
+              <h3>Hytale Block Forge</h3>
+              <p>A custom tool that generates multiple block files at once, speeding up mod creation for the game Hytale.</p>
+              <div class="card-footer"><ul class="tags"><li class="tag">Tooling</li><li class="tag">Modding</li></ul></div>
+            </div>
+          </a>
+          <a class="card card-stretch reveal" href="projects.html#robohand">
+            <div class="card-media"><img src="images/RoboHandFront.jpg" alt="Front view of the robotic hand" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-meta"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Jan 2025 &ndash; Apr 2025</div>
+              <h3>Robotic Hand</h3>
+              <p>With three others from UCF's ASME branch, I designed and fabricated a robotic hand with individually addressable fingers.</p>
+              <div class="card-footer"><ul class="tags"><li class="tag">Robotics</li><li class="tag">CAD</li><li class="tag">Fabrication</li></ul></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Credentials</span>
+            <h2 class="section-title">Certifications</h2>
+          </div>
+        </div>
+        <ul class="cert-list reveal">
+          <li class="cert"><div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div><div><h3><a href="https://www.solidworks.com/certifications/drawing-tools-cswpa-dt">Certified SOLIDWORKS Professional &ndash; Drawing Tools</a></h3><span>2025 &ndash; Present</span></div></li>
+          <li class="cert"><div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div><div><h3><a href="https://www.solidworks.com/certifications/solidworks-cad-design-professional">Certified SOLIDWORKS Professional &ndash; Mechanical Design</a></h3><span>2024 &ndash; Present</span></div></li>
+          <li class="cert"><div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div><div><h3><a href="https://www.solidworks.com/certifications/simulation-cswa-simulation">Certified SOLIDWORKS Associate &ndash; Simulation</a></h3><span>2024 &ndash; Present</span></div></li>
+          <li class="cert"><div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div><div><h3><a href="https://www.solidworks.com/certifications/additive-manufacturing-cswa-additive-manufacturing">Certified SOLIDWORKS Associate &ndash; Additive Manufacturing</a></h3><span>2024 &ndash; Present</span></div></li>
+          <li class="cert"><div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div><div><h3><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/98-367/">Microsoft Technology Associate: Security Fundamentals</a></h3><span>2020 &ndash; Present</span></div></li>
+          <li class="cert"><div class="cert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></svg></div><div><h3>South Carolina Essential Soft Skills Assessments</h3><span>2018 &ndash; Present</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 class="section-title">Let's connect</h2>
+          <p class="lead">Interested in working together or have a question about one of my projects? I'd love to hear from you.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="mailto:jasonovholt@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> Email me</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/jason-holt-b2110a276/"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg> LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year">2026</span> Jason Holt</span>
+      <div class="socials">
+        <a href="https://github.com/JasonOVHolt" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a>
+        <a href="https://www.linkedin.com/in/jason-holt-b2110a276/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+        <a href="mailto:jasonovholt@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

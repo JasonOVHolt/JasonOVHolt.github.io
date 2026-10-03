@@ -1,129 +1,121 @@
-<!-- projects.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Jason Holt</title>
+  <meta name="description" content="Engineering and software projects by Jason Holt.">
+  <meta name="theme-color" content="#0b0d12">
+  <meta property="og:title" content="Projects | Jason Holt">
+  <meta property="og:description" content="Engineering and software projects by Jason Holt.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b8cff'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='white' text-anchor='middle'%3EJH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
 </head>
-
 <body>
-    <nav>
-        <div class="container">
-            <div id="navbarNav">
-                <ul class="navbar">
-                    <li>
-                        <div class="navbar-name">Jason Holt</div>
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="navbar-link-active" href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="workexperience.html">Work Experience</a>
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="contact.html">About Me</a>
-                    </li>
-                    <li>
-                        <a class="navbar-link" href="resume.html">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html"><span class="brand-mark">JH</span>Jason Holt</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="workexperience.html">Experience</a></li>
+          <li><a href="contact.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Content Area with Projects List -->
-    <div class="container">
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <span class="eyebrow">Portfolio</span>
         <h1>Projects</h1>
-        <div class="list-group">
-            <!-- Project 1 -->
-            <div class="list-group-item" id="portfolio">
-                <ul>
-                    <li class="list-group-image"><img src="images/Portfolio.png" alt="Portfolio Code" class= "list-group-image" width="350px" height="350px"></li>
-                    <li class="list-group-item">
-                        <div>
-                            <h1>Portfolio Website</h1>
-                            <p style="font-size:20px">In this project, I created this website using standard HTML and CSS.</p>
-                            <p style="font-size:15px;">Dates: 2/5/2024 - Ongoing</p>
-                            <br>
-                            <small><a class="link" href="https://github.com/JasonOVHolt/JasonOVHolt.github.io">Source Code</a></small>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <p class="lead">A mix of mechanical design, robotics, hardware and software projects I've worked on, solo and with teams.</p>
+      </div>
+    </section>
 
-            <!-- Project 2 -->
-            <div class="list-group-item" id="pcbuild">
-                <ul>
-                    <li class="list-group-image"><img src="images/PCBuild.jpg" alt="Interior of Custom PC" class= "list-group-image" width="350px" height="350px"></li>
-                    <li class="list-group-item">
-                        <div>
-                            <h1>Assembled Custom Desktop</h1>
-                            <p style="font-size:20px">I researched desktop computer parts and put them together for a new computer to use daily for academic and recreational uses.</p>
-                            <p style="font-size:15px">Dates: 7/10/2023 - 8/10/2023</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+    <section class="section" style="padding-top:40px">
+      <div class="container">
+        <article class="project reveal" id="overlay">
+          <div class="card-media card-media-icon"><img src="images/ApplicationOverlay.png" alt="Window Overlay app icon" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-meta"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> October 2026</div>
+            <h2>Window Overlay</h2>
+            <p>A cross-platform app that mirrors any window into an always-on-top overlay with adjustable opacity and cropping, so you can keep a video playing in a corner while you work. Locked overlays are click-through and toggle with a global hotkey.</p>
+            <ul class="tags"><li class="tag">C#</li><li class="tag">Swift</li><li class="tag">Python</li><li class="tag">Desktop App</li></ul>
+            <div class="btn-row" style="margin-top:20px"><a class="btn btn-ghost" href="https://github.com/BreadRightBack/Application-Overlay"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg> Source code</a><a class="btn btn-ghost" href="https://github.com/BreadRightBack/Application-Overlay/releases"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg> Download</a></div>
+          </div>
+        </article>
+        <article class="project reveal" id="hytaletool">
+          <div class="card-media"><img src="images/HytaleBlockForge.jpg" alt="Hytale Block Forge tool" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-meta"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> January 2026</div>
+            <h2>Hytale Block Forge</h2>
+            <p>A custom tool that generates multiple block files at once, speeding up mod creation for the game Hytale.</p>
+            <ul class="tags"><li class="tag">Tooling</li><li class="tag">Modding</li></ul>
+            <div class="btn-row" style="margin-top:20px"><a class="btn btn-ghost" href="https://github.com/JasonOVHolt/HytaleMassBlockGenerator"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg> Source code</a></div>
+          </div>
+        </article>
+        <article class="project reveal" id="robohand">
+          <div class="card-media"><img src="images/RoboHandFront.jpg" alt="Front view of the robotic hand" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-meta"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Jan 2025 &ndash; Apr 2025</div>
+            <h2>Robotic Hand</h2>
+            <p>With three others from UCF's ASME branch, I designed and fabricated a robotic hand with individually addressable fingers.</p>
+            <ul class="tags"><li class="tag">Robotics</li><li class="tag">CAD</li><li class="tag">Fabrication</li></ul>
+            <div class="btn-row" style="margin-top:20px"><a class="btn btn-ghost" href="https://github.com/JasonOVHolt/RoboticHand"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg> Source code</a></div>
+          </div>
+        </article>
+        <article class="project reveal" id="gemini">
+          <div class="card-media"><img src="images/GeminiProject.PNG" alt="Home screen of the story app" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-meta"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> May 2024 &ndash; Aug 2024</div>
+            <h2>Google Gemini Story App</h2>
+            <p>With two friends, I built a Windows app that uses Google's Gemini service to generate stories in a chosen language and difficulty for language practice. An Android build is in development.</p>
+            <ul class="tags"><li class="tag">AI</li><li class="tag">App Dev</li><li class="tag">Team</li></ul>
+            <div class="btn-row" style="margin-top:20px"><a class="btn btn-ghost" href="https://github.com/JasonOVHolt/Gemini-API-Project"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg> Source code</a></div>
+          </div>
+        </article>
+        <article class="project reveal" id="pcbuild">
+          <div class="card-media"><img src="images/PCBuild.jpg" alt="Interior of the custom-built PC" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-meta"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Jul 2023 &ndash; Aug 2023</div>
+            <h2>Assembled Custom Desktop</h2>
+            <p>Researched desktop components and assembled a new computer for daily academic and recreational use.</p>
+            <ul class="tags"><li class="tag">Hardware</li></ul>
+          </div>
+        </article>
+        <article class="project reveal" id="portfolio">
+          <div class="card-media"><img src="images/Portfolio.png" alt="Source code of this website" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-meta"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Feb 2024 &ndash; Ongoing</div>
+            <h2>Portfolio Website</h2>
+            <p>This website, built with hand-written HTML, CSS and a little JavaScript, and hosted on GitHub Pages.</p>
+            <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li></ul>
+            <div class="btn-row" style="margin-top:20px"><a class="btn btn-ghost" href="https://github.com/JasonOVHolt/JasonOVHolt.github.io"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg> Source code</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
-            <!-- Project 3 -->
-            <div class="list-group-item" id="gemini">
-                <ul>
-                    <li class="list-group-image"><img src="images/GeminiProject.PNG" alt="Home Screen to project app" class= "list-group-image" width="350px" height="350px"></li>
-                    <li class="list-group-item">
-                        <div>
-                            <h1>Google Gemini Story App</h1>
-                            <p style="font-size:20px">My 2 friends and I created a windows app that would use google's gemini service to create stories in a specific language and difficulty to practice a language with a android build in development.</p>
-                            <p style="font-size:15px">Dates: May 21 2024 - August 12 2024</p>
-                            <br>
-                            <small><a class="link" href="https://github.com/JasonOVHolt/Gemini-API-Project">Source Code</a></small>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-           
-            <!-- Project 4 -->
-            <div class="list-group-item" id="robohand">
-                <ul>
-                    <li class="list-group-image"><img src="images/RoboHandFront.jpg" alt="" class= "list-group-image" width="350px" height="350px"></li>
-                    <li class="list-group-item">
-                        <div>
-                            <h1>Robotic Hand</h1>
-                            <p style="font-size:20px">Me and 3 others from UCF's ASME branch designed and fabricated a robotic hand with individual addressable fingers.</p>
-                            <p style="font-size:15px">Dates: January 20 2025 - April 21 2025</p>
-                            <br>
-                            <small><a class="link" href="https://github.com/JasonOVHolt/RoboticHand">Source Code</a></small>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="list-group-item" id="hytaletool">
-                <ul>
-                    <li class="list-group-image"><img src="images/HytaleBlockForge.jpg" alt="Hytale Block Forge" class= "list-group-image" width="350px" height="350px"></li>
-                    <li class="list-group-item">
-                        <div>
-                            <h1>Hytale Block Forge</h1>
-                            <p style="font-size:20px">I made a custom tool to generate multiple block files used for creating mods for the game Hytale.</p>
-                            <p style="font-size:15px">Dates: January 2026</p>
-                            <br>
-                            <small><a class="link" href="https://github.com/JasonOVHolt/HytaleMassBlockGenerator">Source Code</a></small>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year">2026</span> Jason Holt</span>
+      <div class="socials">
+        <a href="https://github.com/JasonOVHolt" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a>
+        <a href="https://www.linkedin.com/in/jason-holt-b2110a276/" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a>
+        <a href="mailto:jasonovholt@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+      </div>
     </div>
-                
-            
-
+  </footer>
 </body>
-
 </html>
