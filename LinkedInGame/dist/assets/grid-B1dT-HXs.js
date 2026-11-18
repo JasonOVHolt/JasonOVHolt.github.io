@@ -1,0 +1,1 @@
+function f(o,n,s){const r=Math.floor(o/n),c=o%n,t=[];return r>0&&t.push(o-n),r<s-1&&t.push(o+n),c>0&&t.push(o-1),c<n-1&&t.push(o+1),t}function h(o,n,s,r,c){const t=o.getBoundingClientRect(),e=Math.floor((n-t.left)/t.width*r),u=Math.floor((s-t.top)/t.height*c);return u<0||u>=c||e<0||e>=r?-1:u*r+e}export{h as c,f as n};
